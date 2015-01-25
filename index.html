@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <script>
+      var ctx = document.getElementById('canvas').getContext('2d');
+
+/*Start filling up the gray stroke*/
+ctx.beginPath();
+ctx.moveTo(150, 0);
+ctx.lineTo(300, 60);
+ctx.lineTo(280, 240);
+ctx.lineTo(150, 300);
+ctx.lineTo(20, 240);
+ctx.lineTo(0, 60);
+ctx.fillStyle = "#B2B2B2";
+ctx.fill();
+
+/*Start filling up the right Side content*/
+ctx.beginPath();
+ctx.moveTo(150, 22);
+ctx.lineTo(150, 280);
+ctx.lineTo(40, 230);
+ctx.lineTo(22, 72);
+ctx.fillStyle = "#E62A39";
+ctx.fill();
+
+/*Start filling up the left Side content*/
+ctx.beginPath();
+ctx.moveTo(150, 22);
+ctx.lineTo(280, 72);
+ctx.lineTo(260, 230);
+ctx.lineTo(150, 280);
+ctx.fillStyle = "#B92933";
+ctx.fill();
+
+/*Start filling up right Side of the letter A*/
+ctx.beginPath();
+ctx.moveTo(150, 30);
+ctx.lineTo(250, 220);
+ctx.lineTo(225, 220);
+ctx.lineTo(190, 160);
+ctx.lineTo(150, 160);
+ctx.lineTo(150, 135);
+ctx.lineTo(180, 135);
+ctx.lineTo(150, 70);
+ctx.fillStyle = "#B3B3B3";
+ctx.fill();
+
+/*Start filling up left Side of the letter A*/
+ctx.beginPath();
+ctx.moveTo(150, 30);
+ctx.lineTo(50, 220);
+ctx.lineTo(75, 220);
+ctx.lineTo(105, 160);
+ctx.lineTo(150, 160);
+ctx.lineTo(150, 135);
+ctx.lineTo(120, 135);
+ctx.lineTo(150, 70);
+ctx.fillStyle = "#F2F2F2";
+ctx.fill(); 
+    </script>
+    
+<style type='text/css'>
+/*
+Product:Angular logo Image
+Source: Javascript Canvas + HTML5
+Author: samitha Hewawasam(undescore)
+Date:2015-01-25
+Duration:10:15 AM to 11:45 AM
+*/
+ body {
+    margin:50px;
+}
+</style>
+    
+</head>
+<body>
+   
+  <canvas id="canvas" width="300" height="300"></canvas>  
+</body>
+</html>
